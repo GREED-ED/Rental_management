@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Property</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div id="navbar"></div>
+
+  <h2>Edit Property</h2>
+  <div class="log">
+    <form id="editPropertyForm">
+        Title:
+        <input type="text" name="title" placeholder="Title" required>
+        Description:
+        <textarea name="description" placeholder="Description"></textarea>
+        Price:
+        <input type="number" name="price" placeholder="Price" required>
+        Location:
+        <input type="text" name="location" placeholder="Location" required>
+        Property Type:
+        <select name="property_type" required>
+          <option value="room">Room</option>
+          <option value="apartment">Apartment</option>
+          <option value="house">House</option>
+        </select>
+        Bedrooms:
+        <input type="number" name="bedrooms" placeholder="Bedrooms">
+        Bathrooms:
+        <input type="number" name="bathrooms" placeholder="Bathrooms">
+        <button type="submit">Update Property</button>
+      </form>
+  </div>
+  
+
+  <script src="assets/js/utils.js"></script>
+  <script src="assets/js/edit-property.js"></script>
+  <script src="assets/js/navbar.js"></script>
+
+</body>
+</html>

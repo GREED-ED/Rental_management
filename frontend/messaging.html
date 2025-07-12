@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Messages</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <h2>Chat</h2>
+
+  <div id="chatBox" style="max-height: 300px; overflow-y: auto; margin-bottom: 20px;"></div>
+
+  <form id="msgForm">
+    <input type="text" id="msgInput" placeholder="Type your message..." required>
+    <button type="submit">Send</button>
+  </form>
+
+  <button onclick="window.history.back()">Back</button>
+
+  <script src="assets/js/utils.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/messages.js"></script>
+</body>
+</html>

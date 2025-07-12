@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div id="navbar"></div>
+
+  <h2>Dashboard</h2>
+  <div id="userInfo"></div>
+
+  <div id="ownerSection" style="display:none;">
+    <h3>Your Listed Properties</h3>
+    <div id="myProperties"></div>
+
+    <button onclick="location.href='add-property.html'">Add New Property</button>
+
+    <h3>Incoming Booking Requests</h3>
+    <div id="bookingRequests"></div>
+    <a href="messaging.html?id=${p._id}&user=${p.owner_id._id}">Message</a>
+  </div>
+
+  <div id="renterSection" style="display:none;">
+    <h3>Your Bookings</h3>
+    <div id="myBookings"></div>
+  </div>
+
+  <button onclick="logout()">Logout</button>
+  
+  <script src="assets/js/utils.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+  <script src="assets/js/navbar.js"></script>   
+
+</body>
+</html>

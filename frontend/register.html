@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div id="navbar"></div>
+
+  <h2>Register</h2>
+  <div class="log">
+    <form id="registerForm">
+        Name:
+        <input type="text" name="name" placeholder="Name" required>
+        Phone No.:
+        <input type="text" name="phone" placeholder="Phone">
+        Email:
+        <input type="email" name="email" placeholder="Email" required>
+        Password:
+        <input type="password" name="password" placeholder="Password" required>
+        Role:
+        <select name="user_type" required>
+          <option value="">-- Select Role --</option>
+          <option value="renter">Renter</option>
+          <option value="owner">Owner</option>
+        </select>
+        <button type="submit">Register</button>
+      </form>
+      <p>Already have an account? <a href="login.html">Login</a></p>
+  </div>
+  
+
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/navbar.js"></script>
+
+</body>
+</html>

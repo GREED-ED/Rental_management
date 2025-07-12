@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Property</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/utils.js"></script>
+    <script>checkAuth();</script>
+</head>
+<body>
+    <div id="navbar"></div>
+  <h2>Add New Property</h2>
+  <form id="addPropertyForm" enctype="multipart/form-data">
+    <input type="text" name="title" placeholder="Title" required><br>
+    <textarea name="description" placeholder="Description"></textarea><br>
+    <input type="number" name="price" placeholder="Price" required><br>
+    <input type="text" name="location" placeholder="Location" required><br>
+
+    <select name="property_type" required>
+      <option value="">-- Type --</option>
+      <option value="room">Room</option>
+      <option value="apartment">Apartment</option>
+      <option value="house">House</option>
+    </select><br>
+
+    <input type="number" name="bedrooms" placeholder="Bedrooms"><br>
+    <input type="number" name="bathrooms" placeholder="Bathrooms"><br>
+    <input type="file" name="photos" multiple accept="image/*"><br><br>
+    <button type="submit">Add Property</button>
+</form>
+<button type="button" onclick="location.href='dashboard.html'">Back to Dashboard</button>
+
+  <script src="assets/js/property.js"></script>
+  <script src="assets/js/navbar.js"></script>
+
+</body>
+</html>

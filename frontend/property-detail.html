@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Property Details</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div id="navbar"></div>
+
+  <div id="propertyDetail"></div>
+
+  <div id="bookingSection" style="display: none;">
+    <h3>Book This Property</h3>
+    <form id="bookingForm">
+      <input type="date" name="move_in_date" required><br>
+      <input type="number" name="total_amount" placeholder="Total Rent Amount" required><br>
+      <button type="submit">Book Now</button>
+      <!-- <a href="messaging.html?id=${p._id}&user=${p.owner_id._id}">Message</a> -->
+      
+    </form>
+    <button type="button" onclick="location.href='dashboard.html'">Back to Dashboard</button>
+  </div>
+
+  <script src="assets/js/utils.js"></script>
+  <script src="assets/js/property-detail.js"></script>
+  <script src="assets/js/navbar.js"></script>
+
+</body>
+</html>
