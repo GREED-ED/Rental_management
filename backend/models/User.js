@@ -22,13 +22,24 @@ const userSchema = new mongoose.Schema({
     enum: ['renter', 'owner'], 
     default: 'renter' 
 },
-  profile_photo: { 
+    profile_photo: { 
     type: String 
-},
+  },
+  qr_code: { 
+    type: String 
+  },
+  upi_id: { 
+    type: String 
+  },
+  bank_details: {
+    account_number: { type: String },
+    ifsc_code: { type: String },
+    bank_name: { type: String }
+  },
   created_date: { 
     type: Date, 
     default: Date.now 
-}
+  }
 });
 
 module.exports = mongoose.model('User', userSchema);
